@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TA-K-O | Taquería</title>
+  <style>
+    :root{
+      --rojo:#7a0b0b;
+      --rojo-osc:#4d0606;
+      --blanco:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
+    body{background:#111;color:var(--blanco)}
+    header{
+      min-height:100vh;
+      background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('fondo.jpg');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+    header img{max-width:260px;margin-bottom:20px}
+    header h1{font-size:3rem;letter-spacing:2px}
+    header p{margin:15px 0;font-size:1.2rem}
+    .btn{
+      display:inline-block;
+      padding:14px 26px;
+      background:var(--rojo);
+      color:#fff;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+    }
+    section{padding:60px 20px;max-width:1100px;margin:auto}
+    h2{text-align:center;margin-bottom:40px;font-size:2.2rem;color:#f5f5f5}
+    .menu{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .item{
+      background:#1b1b1b;
+      padding:25px;
+      border-radius:18px;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.4);
+    }
+    .item h3{margin-bottom:10px;color:#ffdddd}
+    .info{text-align:center;line-height:1.8}
+    footer{
+      background:var(--rojo-osc);
+      text-align:center;
+      padding:25px;
+      font-size:.9rem;
+    }
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      color:white;
+      padding:15px 18px;
+      border-radius:50%;
+      font-size:22px;
+      text-decoration:none;
+      box-shadow:0 6px 15px rgba(0,0,0,.5);
+    }
+  </style>
+</head>
+<body>  <header>
+    <div>
+      <!-- Cambia src por el archivo del logo -->
+      <img src="logo.png" alt="TA-K-O logo" />
+      <h1>TA-K-O</h1>
+      <p>Tacos gringas tortas hamburguesas y burritos</p>
+      <a class="btn" href="#menu">Ver menú</a>
+    </div>
+  </header>  <section id="menu">
+    <h2>Menú</h2>
+    <div class="menu">
+      <div class="item"><h3>🌮 Tacos</h3><p>Q20 y Q25</p></div>
+      <div class="item"><h3>🫓 Gringas</h3><p>Q20 y Q30 (gigante)</p></div>
+      <div class="item"><h3>🥪 Tortas</h3><p>Q20 y Q25</p></div>
+      <div class="item"><h3>🍔 Hamburguesas</h3><p>Q25</p></div>
+      <div class="item"><h3>🌯 Burritos</h3><p>Q20 y Q30</p></div>
+    </div>
+  </section>  <section id="eventos">
+    <h2>Servicio especial para eventos</h2>
+    <div class="info">
+      <p>Este servicio es exclusivo para eventos y se cotiza de forma personalizada</p>
+      <p>🍽️ Almuerzos y cenas</p>
+      <p>💍 Bodas</p>
+      <p>🎉 Cumpleaños y 15 años</p>
+      <p>👶 Bautizos y convivios</p>
+      <p>Mínimo de atención para eventos 75 personas</p>
+      <p>Las porciones y rondas se organizan según el tipo de evento</p>
+      <p>Una ronda de tacos incluye cuatro tortillas con carne por persona</p>
+    </div><div class="info">
+  <p>📍 Nos ubicamos en San Juan Comalapa Chimaltenango</p>
+  <p>Referencia por el aserradero en los tres caminos</p>
+  <p>Pregunta a las personas del pueblo y nos encontrarás fácilmente</p>
+  <p>🚚 Llegamos a cualquier parte de Guatemala</p>
+  <p>Los viáticos se cotizan según la distancia del evento</p>
+  <p>Escríbenos por WhatsApp y con gusto te brindamos una cotización clara y justa</p>
+</div>
+
+  </section>  <section>
+    <h2>Ubicación y horario</h2>
+    <div class="info">
+      <p>📍 San Juan Comalapa Chimaltenango</p>
+      <p>Referencia por el aserradero en los tres caminos</p>
+      <p>⏰ Horario de atención de 8 de la mañana a 8 de la noche</p>
+    </div>
+  </section>  <footer>
+    <p>© 2026 TA-K-O Taquería</p>
+  </footer>  <!-- Botón WhatsApp --><a class="whatsapp" href="https://wa.me/50259527336?text=Hola%20quiero%20cotizar%20un%20evento" target="_blank">💬</a>
+
+</body>
+</html>
