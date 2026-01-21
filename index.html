@@ -1,147 +1,162 @@
 <!DOCTYPE html><html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TA-K-O | Taquería & Eventos</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#0f0f0f;color:#fff;line-height:1.6}
-section{padding:80px 8%;position:relative}
-.fade{opacity:0;transform:translateY(40px);transition:all .9s ease}
-.fade.show{opacity:1;transform:translateY(0)}
-h1,h2,h3{font-weight:700}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;gap:20px}
-.hero h1{font-size:3rem;color:#ffcc00}
-.hero p{max-width:600px;font-size:1.1rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
-.card{background:#1b1b1b;border-radius:20px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.4)}
-.card img{width:100%;height:200px;object-fit:cover}
-.card .content{padding:25px}
-.badge{display:inline-block;background:#ffcc00;color:#000;padding:6px 14px;border-radius:20px;font-size:.8rem;margin-bottom:10px}
-.price{font-size:1.3rem;color:#ffcc00;font-weight:700;margin-top:10px}
-.highlight{background:linear-gradient(135deg,#ffcc00,#ff9900);color:#000;border-radius:30px;padding:80px 8%}
-.highlight h2{font-size:2.4rem}
-footer{background:#000;padding:40px 8%;text-align:center;font-size:.9rem;color:#aaa}
-</style>
-</head>
-<body><section class="hero fade">
-  <h1>TA-K-O</h1>
-  <p>Taquería especializada en tacos al pastor y comida mexicana. Ahora también ofrecemos un servicio exclusivo de alimentación para eventos, diseñado para satisfacer a grandes grupos con calidad, sabor y organización profesional.</p>
-</section><section class="fade">
-  <h2>Servicio para Eventos</h2>
-  <p>Este servicio es exclusivo para eventos y se cotiza de forma personalizada según el tipo de celebración, cantidad de personas y menú seleccionado.</p>
-</section><section class="fade">
-  <h2>Tipos de Eventos</h2>
-  <div class="grid">
-    <div class="card"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"><div class="content"><h3>Almuerzos Corporativos</h3><p>Ideal para reuniones, convivios empresariales y actividades laborales.</p></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83"><div class="content"><h3>Cenas Formales</h3><p>Servicio elegante y abundante para eventos nocturnos.</p></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1514511547113-9f8f0c8b0b9f"><div class="content"><h3>Bodas</h3><p>Menú reforzado para invitados exigentes y largas jornadas.</p></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"><div class="content"><h3>Cumpleaños y 15 años</h3><p>Comida abundante para celebraciones familiares.</p></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"><div class="content"><h3>Bautizos</h3><p>Opciones equilibradas para todas las edades.</p></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1"><div class="content"><h3>Convivios</h3><p>Paquetes flexibles para reuniones sociales.</p></div></div>
-  </div>
-</section><section class="highlight fade">
-  <h2>Paquetes para Eventos (mínimo 75 personas)</h2>
-  <p>Todos los paquetes están diseñados para que los invitados queden satisfechos, considerando porciones reales y refuerzos necesarios.</p>
-</section><section class="fade">
-  <div class="grid">
-    <div class="card"><div class="content"><span class="badge">Paquete Esencial</span><h3>75 a 100 personas</h3><p>• 6 tacos por persona (24 tortillas con carne)<br>• Acompañamientos básicos<br>• Bebida en bolsa o fresco natural</p><p class="price">Q45 – Q55 por persona</p></div></div>
-    <div class="card"><div class="content"><span class="badge">Paquete Completo</span><h3>100 a 150 personas</h3><p>• 8 tacos por persona<br>• Refuerzo adicional de carne<br>• Bebidas en lata (gaseosa o jugo)</p><p class="price">Q60 – Q75 por persona</p></div></div>
-    <div class="card"><div class="content"><span class="badge">Paquete Premium</span><h3>150 personas o más</h3><p>• 10 tacos por persona<br>• Opción mixta (tacos + gringas o burritos)<br>• Bebidas en lata y agua pura<br>• Personal de servicio</p><p class="price">Q85 – Q110 por persona</p></div></div>
-  </div>
-</section><section class="fade">
-  <h2>Ubicación y Horario</h2>
-  <p>📍 San Juan Comalapa, Chimaltenango<br>Por el aserradero, en los tres caminos. Pregunta a las personas del pueblo y nos encontrarás fácilmente.<br><br>🕗 Horario: 8:00 AM a 8:00 PM</p>
-</section><section class="fade">
-  <h2>Cobertura</h2>
-  <p>Llegamos a cualquier parte de Guatemala. Pregunta por tu ubicación y con gusto te indicaremos los viáticos correspondientes.</p>
-</section><section class="fade">
-  <h2>Contacto y Cotizaciones</h2>
-  <p>📞 WhatsApp: 59 52 73 36<br>Solicita tu cotización personalizada según tu evento.</p>
-</section><footer>
-  <p>© TA-K-O Taquería & Eventos</p>
-</footer><script>
-const faders=document.querySelectorAll('.fade');
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show');});},{threshold:.2});
-faders.forEach(f=>obs.observe(f));
-</script></body>
-</html>    section{padding:60px 20px;max-width:1100px;margin:auto}
-    h2{text-align:center;margin-bottom:40px;font-size:2.2rem;color:#f5f5f5}
-    .menu{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TA-K-O | Eventos Callejeros Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Oswald', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
     }
-    .item{
-      background:#1b1b1b;
-      padding:25px;
-      border-radius:18px;
-      text-align:center;
-      box-shadow:0 10px 25px rgba(0,0,0,.4);
-    }
-    .item h3{margin-bottom:10px;color:#ffdddd}
-    .info{text-align:center;line-height:1.8}
-    footer{
-      background:var(--rojo-osc);
-      text-align:center;
-      padding:25px;
-      font-size:.9rem;
-    }
-    .whatsapp{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25d366;
-      color:white;
-      padding:15px 18px;
-      border-radius:50%;
-      font-size:22px;
-      text-decoration:none;
-      box-shadow:0 6px 15px rgba(0,0,0,.5);
-    }
+    section { padding: 80px 8%; }
+    h1, h2, h3 { letter-spacing: 1px; }
+    h1 { font-size: 3.2rem; }
+    h2 { font-size: 2.4rem; margin-bottom: 30px; }
+    p { color: #d0d0d0; }/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+  url('https://images.unsplash.com/photo-1601924582975-7f5c3c1c1b4b') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  max-width: 700px;
+  animation: fadeUp 1.2s ease forwards;
+}
+.hero h1 { margin-bottom: 20px; }
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 34px;
+  background: #e63900;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  transition: transform .3s, box-shadow .3s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(230,57,0,.5);
+}
+
+/* EVENTOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+.card {
+  background: #161616;
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform .4s, box-shadow .4s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,.6);
+}
+
+/* PAQUETES */
+.package {
+  background: linear-gradient(145deg,#1b1b1b,#111);
+  border-radius: 25px;
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp .8s ease forwards;
+}
+.package h3 { margin-bottom: 15px; }
+.price {
+  font-size: 1.6rem;
+  color: #e63900;
+  margin-top: 20px;
+}
+
+/* TESTIMONIOS */
+.stars { color: gold; margin-bottom: 10px; }
+
+/* FOOTER */
+footer {
+  background: #000;
+  padding: 50px 8%;
+  text-align: center;
+}
+
+/* ANIMACIONES */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
   </style>
 </head>
-<body>  <header>
-    <div>
-      <!-- Cambia src por el archivo del logo -->
-      <img src="logo.png" alt="TA-K-O logo" />
-      <h1>TA-K-O</h1>
-      <p>Tacos gringas tortas hamburguesas y burritos</p>
-      <a class="btn" href="#menu">Ver menú</a>
+<body>  <!-- HERO -->  <section class="hero">
+    <div class="hero-content">
+      <h1>Sabor callejero<br>para eventos que se recuerdan</h1>
+      <p>TA-K-O lleva el auténtico sabor de la calle a tus eventos grandes y especiales.</p>
+      <a href="#paquetes" class="btn">Cotiza tu evento</a>
     </div>
-  </header>  <section id="menu">
-    <h2>Menú</h2>
-    <div class="menu">
-      <div class="item"><h3>🌮 Tacos</h3><p>Q20 y Q25</p></div>
-      <div class="item"><h3>🫓 Gringas</h3><p>Q20 y Q30 (gigante)</p></div>
-      <div class="item"><h3>🥪 Tortas</h3><p>Q20 y Q25</p></div>
-      <div class="item"><h3>🍔 Hamburguesas</h3><p>Q25</p></div>
-      <div class="item"><h3>🌯 Burritos</h3><p>Q20 y Q30</p></div>
+  </section>  <!-- EVENTOS -->  <section>
+    <h2>Eventos que atendemos</h2>
+    <div class="grid">
+      <div class="card">Almuerzos corporativos</div>
+      <div class="card">Cenas formales</div>
+      <div class="card">Bodas</div>
+      <div class="card">Cumpleaños y XV años</div>
+      <div class="card">Bautizos</div>
+      <div class="card">Convivios</div>
     </div>
-  </section>  <section id="eventos">
-    <h2>Servicio especial para eventos</h2>
-    <div class="info">
-      <p>Este servicio es exclusivo para eventos y se cotiza de forma personalizada</p>
-      <p>🍽️ Almuerzos y cenas</p>
-      <p>💍 Bodas</p>
-      <p>🎉 Cumpleaños y 15 años</p>
-      <p>👶 Bautizos y convivios</p>
-      <p>Mínimo de atención para eventos 75 personas</p>
-      <p>Las porciones y rondas se organizan según el tipo de evento</p>
-      <p>Una ronda de tacos incluye cuatro tortillas con carne por persona</p>
-    </div><div class="info">
-  <p>📍 Nos ubicamos en San Juan Comalapa Chimaltenango</p>
-  <p>Referencia por el aserradero en los tres caminos</p>
-  <p>Pregunta a las personas del pueblo y nos encontrarás fácilmente</p>
-  <p>🚚 Llegamos a cualquier parte de Guatemala</p>
-  <p>Los viáticos se cotizan según la distancia del evento</p>
-  <p>Escríbenos por WhatsApp y con gusto te brindamos una cotización clara y justa</p>
-</div>
-
-  </section>  <section>
-    <h2>Ubicación y horario</h2>
-    <div class="info">
+  </section>  <!-- PAQUETES -->  <section id="paquetes">
+    <h2>Paquetes de tacos para eventos</h2>
+    <p>Mínimo 75 personas · Servicio exclusivo para eventos</p><br>
+    <div class="grid">
+      <div class="package">
+        <h3>Paquete 1 · 75 a 100 personas</h3>
+        <p>4 tacos por persona + refuerzo<br>Bebida incluida<br>2 cocineros · 2 ayudantes · 2 meseros<br>Montaje básico · Atención durante el servicio</p>
+        <div class="price">Desde Q5,800</div>
+      </div>
+      <div class="package">
+        <h3>Paquete 2 · 100 a 150 personas</h3>
+        <p>Más proteína<br>Bebidas variadas<br>Mejor montaje<br>Servicio más fluido</p>
+        <div class="price">Desde Q9,000</div>
+      </div>
+      <div class="package">
+        <h3>Paquete 3 · 150 a 250 personas</h3>
+        <p>Doble estación de tacos<br>Bebidas en lata y botella<br>Equipo completo<br>Flujo continuo</p>
+        <div class="price">Desde Q14,500</div>
+      </div>
+      <div class="package">
+        <h3>Paquete personalizado</h3>
+        <p>Creamos tu paquete según personas, proteína, bebidas, tiempo y ubicación.</p>
+        <a class="btn" href="https://wa.me/50259527336">Arma tu paquete</a>
+      </div>
+    </div>
+  </section>  <!-- TESTIMONIOS -->  <section>
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>"Todos quedaron llenos y felices. Servicio excelente."</p>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>"La mejor decisión para nuestro evento."</p>
+      </div>
+    </div>
+  </section>  <!-- FOOTER -->  <footer>
+    <p>📍 San Juan Comalapa, Chimaltenango · Por el aserradero, tres caminos</p>
+    <p>🕗 8:00 a.m. – 8:00 p.m.</p>
+    <p>📱 WhatsApp: 59 52 73 36</p>
+    <p>TA-K-O · Sabor callejero premium</p>
+  </footer></body>
+</html>v class="info">
       <p>📍 San Juan Comalapa Chimaltenango</p>
       <p>Referencia por el aserradero en los tres caminos</p>
       <p>⏰ Horario de atención de 8 de la mañana a 8 de la noche</p>
