@@ -1,114 +1,91 @@
 <!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TA-K-O | Eventos Callejeros Premium</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Oswald', sans-serif;
-      background: #0e0e0e;
-      color: #fff;
-      line-height: 1.6;
-    }
-    section { padding: 80px 8%; }
-    h1, h2, h3 { letter-spacing: 1px; }
-    h1 { font-size: 3.2rem; }
-    h2 { font-size: 2.4rem; margin-bottom: 30px; }
-    p { color: #d0d0d0; }/* HERO */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-  url('https://images.unsplash.com/photo-1601924582975-7f5c3c1c1b4b') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-}
-.hero-content {
-  max-width: 700px;
-  animation: fadeUp 1.2s ease forwards;
-}
-.hero h1 { margin-bottom: 20px; }
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 34px;
-  background: #e63900;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  border-radius: 40px;
-  transition: transform .3s, box-shadow .3s;
-}
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(230,57,0,.5);
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TA-K-O | Eventos Callejeros Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Oswald',sans-serif;background:#0e0e0e;color:#fff}
+section{padding:100px 8%}
+h1{font-size:3.8rem;line-height:1.1}
+h2{text-align:center;font-size:2.7rem;margin-bottom:50px}
+h3{margin-bottom:15px}
+p{color:#ddd}/* HERO VIDEO */ .hero{position:relative;height:100vh;overflow:hidden} .hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover} .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6))} .hero-content{position:relative;z-index:2;max-width:720px;top:50%;transform:translateY(-50%);padding-left:8%;animation:fadeUp 1.2s}
 
-/* EVENTOS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 30px;
-}
-.card {
-  background: #161616;
-  border-radius: 20px;
-  padding: 30px;
-  transition: transform .4s, box-shadow .4s;
-  cursor: pointer;
-}
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0,0,0,.6);
-}
+.btn{display:inline-block;margin-top:30px;padding:16px 40px;background:#ffb000;color:#000;text-decoration:none;border-radius:50px;font-size:1.1rem;transition:.3s} .btn:hover{transform:translateY(-4px);box-shadow:0 15px 30px rgba(255,176,0,.5)}
 
-/* PAQUETES */
-.package {
-  background: linear-gradient(145deg,#1b1b1b,#111);
-  border-radius: 25px;
-  padding: 35px;
-  position: relative;
-  overflow: hidden;
-  animation: fadeUp .8s ease forwards;
-}
-.package h3 { margin-bottom: 15px; }
-.price {
-  font-size: 1.6rem;
-  color: #e63900;
-  margin-top: 20px;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px}
 
-/* TESTIMONIOS */
-.stars { color: gold; margin-bottom: 10px; }
+/* EVENT CARDS */ .event-card{position:relative;height:300px;border-radius:28px;overflow:hidden;cursor:pointer;background-size:cover;background-position:center;transition:.4s} .event-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,.15))} .event-card h3{position:absolute;bottom:30px;left:30px;z-index:2;font-size:1.4rem} .event-card:hover{transform:scale(1.05)}
 
-/* FOOTER */
-footer {
-  background: #000;
-  padding: 50px 8%;
-  text-align: center;
-}
+/* PACKAGES */ .package{background:#161616;border-radius:28px;padding:45px;transition:.3s} .package:hover{transform:translateY(-8px)} .price{color:#ffb000;font-size:1.8rem;margin-top:20px}
 
-/* ANIMACIONES */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+/* TESTIMONIOS */ .testimonial{background:#141414;border-radius:25px;padding:40px} .testimonial img{width:55px;height:55px;border-radius:50%;margin-bottom:15px} .stars{color:#ffb000}
 
-  </style>
+/* MODAL */ .modal{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:1000} .modal-content{background:#111;border-radius:30px;padding:50px;max-width:900px;width:90%;max-height:90vh;overflow:auto;animation:fadeUp .6s} .close{position:absolute;top:20px;right:30px;font-size:1.8rem;cursor:pointer}
+
+/* WHATSAPP */ .whatsapp{position:fixed;right:25px;bottom:25px;background:#25d366;color:#fff;padding:16px 22px;border-radius:50px;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,.4);z-index:999}
+
+footer{background:#000;text-align:center;padding:60px 8%}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}} </style>
+
 </head>
-<body>  <!-- HERO -->  <section class="hero">
-    <div class="hero-content">
-      <h1>Sabor callejero<br>para eventos que se recuerdan</h1>
-      <p>TA-K-O lleva el auténtico sabor de la calle a tus eventos grandes y especiales.</p>
-      <a href="#paquetes" class="btn">Cotiza tu evento</a>
-    </div>
-  </section>  <!-- EVENTOS -->  <section>
-    <h2>Eventos que atendemos</h2>
-    <div class="grid">
-      <div class="card">Almuerzos corporativos</div>
-      <div class="card">Cenas formales</div>
-      <div class="card">Bodas</div>
+<body><a class="whatsapp" href="https://wa.me/50259527336">💬 WhatsApp</a>
+
+<section class="hero">
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-tacos-being-prepared-1575/1080p.mp4" type="video/mp4">
+</video>
+<div class="hero-content">
+<h1>Sabor callejero<br>para eventos inolvidables</h1>
+<p>Tacos reales, bien servidos y con presencia profesional para eventos grandes.</p>
+<a href="#eventos" class="btn">Ver servicios</a>
+</div>
+</section><section id="eventos">
+<h2>Eventos que atendemos</h2>
+<div class="grid">
+<div class="event-card" onclick="openModal()" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947')"><h3>Almuerzos corporativos</h3></div>
+<div class="event-card" onclick="openModal()" style="background-image:url('https://images.unsplash.com/photo-1555992336-cbfdbf5a3f4b')"><h3>Cenas formales</h3></div>
+<div class="event-card" onclick="openModal()" style="background-image:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1')"><h3>Bodas</h3></div>
+<div class="event-card" onclick="openModal()" style="background-image:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092')"><h3>Cumpleaños y XV años</h3></div>
+<div class="event-card" onclick="openModal()" style="background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe')"><h3>Bautizos</h3></div>
+<div class="event-card" onclick="openModal()" style="background-image:url('https://images.unsplash.com/photo-1514516870926-2057c4df4f31')"><h3>Convivios</h3></div>
+</div>
+</section><section>
+<h2>Paquetes para eventos</h2>
+<div class="grid">
+<div class="package"><h3>75 a 100 personas</h3><p>4 tacos por persona + refuerzo<br>Bebida incluida<br>Personal completo</p><div class="price">Desde Q5,800</div></div>
+<div class="package"><h3>100 a 150 personas</h3><p>Más proteína<br>Bebidas variadas<br>Mejor montaje</p><div class="price">Desde Q9,000</div></div>
+<div class="package"><h3>150 a 250 personas</h3><p>Doble estación de tacos<br>Bebidas en lata y botella<br>Flujo continuo</p><div class="price">Desde Q14,500</div></div>
+<div class="package"><h3>Personalizado</h3><p>Diseñamos tu paquete según tu evento y presupuesto.</p><a class="btn" href="https://wa.me/50259527336">Arma tu paquete</a></div>
+</div>
+</section><section>
+<h2>Lo que dicen nuestros clientes</h2>
+<div class="grid">
+<div class="testimonial"><img src="https://randomuser.me/api/portraits/men/32.jpg"><div class="stars">★★★★★</div><p>Contratamos TA-K-O para un convivio empresarial y el servicio fue puntual, ordenado y la comida excelente.</p><strong>— Carlos M.</strong></div>
+<div class="testimonial"><img src="https://randomuser.me/api/portraits/women/45.jpg"><div class="stars">★★★★★</div><p>En los XV años de mi hija todos quedaron satisfechos, nadie se quedó sin comer y el sabor fue increíble.</p><strong>— María López</strong></div>
+<div class="testimonial"><img src="https://randomuser.me/api/portraits/men/54.jpg"><div class="stars">★★★★★</div><p>Muy buena atención desde la cotización hasta el final del evento. Totalmente recomendados.</p><strong>— José Ramírez</strong></div>
+</div>
+</section><div class="modal" id="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">✕</span>
+<h2>Servicio para eventos</h2>
+<p>Mínimo 75 personas · Cotización personalizada</p><br>
+<p>Incluye alimentos, bebidas, personal, montaje y atención durante todo el servicio.</p><br>
+<a class="btn" href="https://wa.me/50259527336">Solicitar cotización</a>
+</div>
+</div><footer>
+<p>📍 San Juan Comalapa, Chimaltenango · Por el aserradero, tres caminos</p>
+<p>🕗 8:00 a.m. – 8:00 p.m.</p>
+<p>📱 59 52 73 36</p>
+<p>TA-K-O · Callejero Premium</p>
+</footer><script>
+function openModal(){document.getElementById('modal').style.display='flex'}
+function closeModal(){document.getElementById('modal').style.display='none'}
+</script></body>
+</html>      <div class="card">Bodas</div>
       <div class="card">Cumpleaños y XV años</div>
       <div class="card">Bautizos</div>
       <div class="card">Convivios</div>
