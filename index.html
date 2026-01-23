@@ -113,9 +113,60 @@ body{margin:0;background:var(--crema);color:#222;}
 }
 </style>
 </head>
+<style>
+:root{
+  --rojo-oscuro:#6B0F0F;
+  --crema:#F2EEE6;
+  --rojo:#C11212;
+}
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background:var(--crema);
+  color:#222;
+}
+
+/* ANIMACIONES */
+.fade-up{
+  animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* BOTONES */
+.btn{
+  background:var(--rojo);
+  color:white;
+  padding:14px 26px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+  display:inline-block;
+}
+.btn:hover{
+  background:var(--rojo-oscuro);
+  transform:scale(1.05);
+}
+</style>
 <body>
-
+<nav class="fade-up" style="background:#6B0F0F;padding:18px;display:flex;justify-content:space-between;align-items:center;">
+  <h2 style="color:#F2EEE6;">TA-K-O</h2>
+  <div>
+    <a href="index.html" style="color:#F2EEE6;margin:0 10px;">Inicio</a>
+    <a href="bodas.html" style="color:#F2EEE6;margin:0 10px;">Bodas</a>
+    <a href="cumpleanos.html" style="color:#F2EEE6;margin:0 10px;">Cumpleaños</a>
+    <a href="15anos.html" style="color:#F2EEE6;margin:0 10px;">15 Años</a>
+  </div>
+</nav>
 <section class="hero" data-aos="fade-in">
   <h1 data-aos="fade-up">Bodas Premium TA-K-O</h1>
   <p data-aos="fade-up" data-aos-delay="200">
@@ -196,4 +247,29 @@ AOS.init({duration:900,once:true,easing:'ease-out-cubic'});
 </script>
 
 </body>
+  <section class="fade-up" style="padding:60px;text-align:center;">
+  <h2 style="color:#6B0F0F;margin-bottom:30px;">Nuestro Menú</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;">
+
+    <div style="background:white;border-radius:20px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1601924582975-7dbe27d5c59d" style="width:100%;height:220px;object-fit:cover;">
+      <h3>Tacos</h3>
+      <a class="btn" href="https://wa.me/50259527336">Cotizar</a>
+    </div>
+
+    <div style="background:white;border-radius:20px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" style="width:100%;height:220px;object-fit:cover;">
+      <h3>Gringas</h3>
+      <a class="btn" href="https://wa.me/50259527336">Cotizar</a>
+    </div>
+
+    <div style="background:white;border-radius:20px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" style="width:100%;height:220px;object-fit:cover;">
+      <h3>Hamburguesas</h3>
+      <a class="btn" href="https://wa.me/50259527336">Cotizar</a>
+    </div>
+
+  </div>
+  </section>
 </html>
